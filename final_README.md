@@ -11,6 +11,11 @@ This project is a Fintech API built with Node.js, Express, Sequelize, and TypeSc
 - npm (>= 6.x) or yarn (>= 1.x)
 - PostgreSQL (or any other SQL database supported by Sequelize)
 
+Install dependencies:
+npm install (root)
+npm install (client)
+
+
 Scripts
 seed: Seeds the database with initial data.
 start: Runs the backend and the React frontend concurrently.
