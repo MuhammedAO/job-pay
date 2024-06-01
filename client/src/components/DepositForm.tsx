@@ -4,6 +4,12 @@ interface DepositFormProps {
   userId: number; 
 }
 
+
+/**
+ * DepositForm Component: Enables clients to deposit money into their accounts. The deposit is restricted to not
+ * exceed 25% of their total payable amount for active jobs. The component uses the user's profile ID for transaction
+ * authentication and validation.
+ */
 const DepositForm: React.FC<DepositFormProps> = ({ userId }) => {
   const [amount, setAmount] = useState('');
   const [message, setMessage] = useState('');
@@ -32,9 +38,9 @@ const DepositForm: React.FC<DepositFormProps> = ({ userId }) => {
         setMessage(data.message + ` New balance: ${data.newBalance}`);
         setError('');
       }
-    } catch (error) {
+    } catch (error:any) {
       console.error('Error submitting deposit:', error);
-      setError('Failed to submit the deposit.');
+      setError('Failed to submit the deposit.: ' + error.message);
     }
   };
 
