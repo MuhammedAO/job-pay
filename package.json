@@ -17,7 +17,8 @@
     "seed": "ts-node-dev  ./scripts/seedDb.ts",
     "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
     "start-backend": "ts-node-dev ./src/server.ts",
-    "start-frontend": "cd client && npm start"
+    "start-frontend": "cd client && npm start",
+    "test": "jest"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
