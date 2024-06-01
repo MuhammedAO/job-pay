@@ -1,4 +1,4 @@
-import { Contract, Job, Profile, sequelize } from "../src/model";
+import { Contract, Job, Profile } from "../src/model";
 
 
 /* WARNING THIS WILL DROP THE CURRENT DATABASE */
