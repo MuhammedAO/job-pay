@@ -38,8 +38,8 @@ const BestClients: React.FC = () => {
       const data = await response.json()
       setClients(data)
       setError("")
-    } catch (error) {
-      setError("Error fetching data.")
+    } catch (error:any) {
+      setError("Error fetching data.: " + error.message)
       console.error(error)
     }
   }
