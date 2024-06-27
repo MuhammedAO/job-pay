@@ -13,7 +13,7 @@ This project is a Fintech API built with Node.js, Express, Sequelize, and TypeSc
 
 Install dependencies:
 npm install (root)
-npm install (client)
+npm install (root)
 
 
 Scripts
